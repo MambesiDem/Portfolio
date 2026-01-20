@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Projects</title>
+    <link rel="stylesheet" href="projectsStyle.css">
+</head>
+<body>
+
+    <h1>My Projects</h1>
+
+    <!-- PROJECT EXAMPLE -->
+    <div class="project">
+        <a class="see-code" href="https://github.com/yourusername/laundry-app" target="_blank">See Code</a>
+        <h2>Laundry Application</h2>
+        <img src="images/laundry-main.png" class="main-img" onclick="toggleGallery('laundry-gallery')" alt="Laundry App UI">
+        <div id="laundry-gallery" class="gallery">
+            <img src="images/laundry-screen1.png" alt="Screen 1">
+            <img src="images/laundry-screen2.png" alt="Screen 2">
+            <img src="images/laundry-screen3.png" alt="Screen 3">
+        </div>
+    </div>
+
+    <!-- You can duplicate this block for other projects -->
+
+    <script>
+        function toggleGallery(id) {
+            const gallery = document.getElementById(id);
+            gallery.style.display = (gallery.style.display === "block") ? "none" : "block";
+        }
+    </script>
+
+</body>
+</html>

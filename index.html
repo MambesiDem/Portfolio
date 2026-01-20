@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/fb78f494c1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="title">Mambesi's Portfolio</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Engineer</p>
+                <h1>Hi, I'm <span>Mambesi Dem</span>.<br> A Computer Science graduate with interests in software engineering and data analysis.</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/professional_image.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tible">About Me</h1>
+                    <p>Motivated Computer Science graduate with strong programming, analytical, and problem‑solving skills, supported by Honours‑level coursework in Mathematics and Computer Science. 
+                        Experienced in building real‑world software solutions across mobile, desktop, and database‑driven systems using Java, C#, SQL, Python, and modern development tools. 
+                        Demonstrated leadership through mentoring, tutoring, and project coordination roles, and passionate about creating efficient, user‑focused applications.  
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Programming Languages</span><br>
+                                Java, C#, Python, JavaScript, SQL, Kotlin, F#, MATLAB
+                            </li>
+                            <li>
+                                <span>Desktop, Mobile, and Web development</span><br>
+                                HTML, CSS, JavaScript, Android Development (Java, XML), JavaFX, Bootstrap, Razor
+                            </li>
+                            <li>
+                                <span>Databases</span><br>
+                                MS SQL Server, Relational Database Design, SQL Queries, data visualisation, data integrity
+                            </li>
+                            <li>
+                                <span>Tools & Technologies</span><br>
+                                Git, GitHub, IntelliJ, Android Studio, VS Code, Maven, Gradle, Unity, Vuforia
+                            </li>
+                            <li>
+                                <span>Core Concepts</span><br>
+                                OOP, Data Structures & Algorithms, Design Patterns, Agile, SDLC, Unit Testing
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span>Practical Supervisor – Nelson Mandela University</span><br>
+                                Supervised programming practical sessions, supported student assistants,
+                                assisted with marking, and communicated student challenges to lecturers.
+                            </li>
+                            <li>
+                                <span>Lecturing Assistant (MATLAB)</span><br>
+                                Assisted with lecture delivery across multiple labs, guided students during
+                                sessions, and marked practical assignments and tests.
+                            </li>
+                            <li>
+                                <span>Student Mentor</span><br>
+                                Led a team of mentors supporting bursary students, organised academic groups,
+                                and conducted regular mentoring sessions.
+                            </li>
+                            <li>
+                                <span>Tutor</span><br>
+                                Tutored Programming, Data Structures & Algorithms, MATLAB, and Mathematics for
+                                first-year students.
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li>
+                                <span>BSc Computer Science (2019 – 2024)</span><br>
+                                Nelson Mandela University<br>
+                                • Majored in Computer Science and Mathematics<br>
+                                • BankSETA Bursary recipient (2021 – 2023)<br>
+                                • SAP Bursary recipient (2024)
+                            </li>
+                            <li>
+                                <span>BSc Honours Mathematics (2025 – In Progress)</span><br>
+                                Nelson Mandela University<br>
+                                • Core modules: Topology, Functional Analysis, Abstract Algebra, Research Project<br>
+                                • Added Computer Science Honours modules: Functional Programming, Virtual Reality Environment Development
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-tible">Technical Experience</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-mobile-screen-button"></i>
+                    <h2>Mobile App Developer</h2>
+                    <p>
+                    • Developed multiple Android applications using Java and XML.<br>
+                    • Led a team of four in building a full laundry management system.<br>
+                    • Integrated mobile apps with MS SQL Server databases.
+                    </p>
+                    <a href="#portfolio">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-desktop"></i>
+                    <h2>Desktop App Developer</h2>
+                    <p>
+                    • Built JavaFX desktop applications connected to relational databases.<br>
+                    • Implemented data management using MS SQL Server.<br>
+                    • Ensured smooth integration between desktop and mobile systems.
+                    </p>
+                    <a href="#portfolio">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-battery-full"></i>
+                    <h2>Full-stack developed</h2>
+                    <p>
+                    • Designed and implemented end-to-end systems (UI, logic, database).<br>
+                    • Worked with RESTful concepts, Git version control, and Agile practices.<br>
+                    • Focused on scalable, user-centric application design.
+                    </p>
+                    <a href="#portfolio">learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class = "sub-tible">My Work</h1>
+            <div class="work-list" id="workList">
+                <div class="work">
+                    <img src="images/washIt-generated.png">
+                    <div class="layer">
+                        <h3>WashIt – Laundry Management System</h3>
+                        <p>
+                        Android & desktop-based laundry application with a relational database backend.
+                        Led development and system integration.
+                        </p>
+                        <a href="https://github.com/MambesiDem/Final-year-project"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Financial analytics.png">
+                    <div class="layer">
+                        <h3>Financial Analytics App</h3>
+                        <p>
+                        Android app that parses SMS transactions using regex and categorises financial data
+                        automatically.
+                        </p>
+                        <a href="https://github.com/MambesiDem/Budget-Watcher"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/sequence-dice.png">
+                    <div class="layer">
+                        <h3>Sequence Dice Game</h3>
+                        <p>
+                        Java-based Android board game supporting 2–4 players with turn-based mechanics
+                        and game logic.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/sudoku-generator.png">
+                    <div class="layer">
+                        <h3>Multithreaded Sudoku Board Generator</h3>
+                        <p>
+                        Console-based application that generates 10,000 unique Sudoku solution boards
+                        using a Wave Collapse Function and multithreading for high-performance execution.
+                        </p>
+                        <a href="https://github.com/MambesiDem/Sodoku-Generator/tree/main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/Blazor-app.png">
+                    <div class="layer">
+                        <h3>Assembly Line Operations Manager</h3>
+                        <p>
+                        Blazor Server web application built with C# and Razor components that allows users
+                        to manage assembly line operations and assign devices using an interactive,
+                        single-page interface.
+                        </p>
+                        <a href="https://github.com/MambesiDem/Blazor-Server-Application"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/AR-VR-AI.png">
+                    <div class="layer">
+                        <h3>VR / AR / AI Projects</h3>
+                        <p>
+                        Interactive VR, AR, and AI-based applications demonstrating immersive environments,
+                        intelligent behaviour, and real-time user interaction.
+                        </p>
+                        <a href="https://github.com/MambesiDem/Sequence-Dice/tree/main"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <a href="#" class="btn" id="seeMoreBtn">See more</a>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>demmambesi@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0825152423</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/bestimore.nelip"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/mambesi-dem-0aa641193/"><i class="fa-brands fa-linkedin"></i></i></a>
+                        <a href="https://github.com/MambesiDem?tab=repositories"><i class="fa-brands fa-github"></i></i></i></a>
+                    </div>
+                    <a href="images/Mambesi_Dem_CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="" name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Mambesi Dem</p>
+        </div>
+    </div>
+
+    <script>
+        const seeMoreBtn = document.getElementById("seeMoreBtn");
+        const workItems = document.querySelectorAll("#workList .work");
+
+        let expanded = false;
+
+        // Hide extra items on load
+        for (let i = 3; i < workItems.length; i++) {
+            workItems[i].classList.add("hidden");
+        }
+
+        seeMoreBtn.addEventListener("click", function (e) {
+            e.preventDefault(); // ⬅️ stops page jump
+            toggleWork();
+        });
+
+        function toggleWork() {
+            expanded = !expanded;
+
+            for (let i = 3; i < workItems.length; i++) {
+                workItems[i].classList.toggle("hidden");
+            }
+
+            seeMoreBtn.textContent = expanded ? "See less" : "See more";
+        }
+    </script>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxRToGF45Ue4rWSiB6T1fw_9-SUtssXWYqHyWYb0mHQZj_SFj4D8-oSF62Eih7aCIrY/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
