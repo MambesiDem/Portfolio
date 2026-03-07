@@ -318,7 +318,7 @@ nav .fa-solid{
 }
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/mypic.png);
+        background-image: url(images/front_prof_picture.png);
     }
     .header-text{
         margin-top: 20%;
